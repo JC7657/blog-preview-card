@@ -1,0 +1,36 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  body {
+    @apply font-figtree bg-theme-yellow;
+  }
+  .text-preset1 {
+    @apply text-2xl font-extrabold;
+  }
+  .text-preset2 {
+    @apply text-base font-medium;
+  }
+  .text-preset3 {
+    @apply text-sm font-medium text-theme-gray-500;
+  }
+  .text-preset4 {
+    @apply text-sm font-extrabold;
+  }
+}
+
+@layer components {
+  .card-container {
+    @apply bg-theme-white rounded-xl p-5 mx-3 flex flex-col shadow-flat max-w-[350px];
+  }
+  .main-image {
+    @apply rounded-xl w-fit self-center mb-5;
+  }
+}
+
+@layer utilities {
+  .smooth-transition {
+    @apply transition duration-200 ease-out;
+  }
+}
